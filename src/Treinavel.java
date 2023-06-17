@@ -1,4 +1,4 @@
 public interface Treinavel{
 
-    public String realizarTruque();
+    String realizarTruque();
 }

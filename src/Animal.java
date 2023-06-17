@@ -1,4 +1,7 @@
 public class Animal{
+    //Uma classe, ou superclasse "de tipo geral", para os animais do zoológico,
+    //uma vez que serão adicionados animais ao zoológico, que não necessariamente
+    //serão dos tipos das subclasses, "Toda ave é um animal, nem todo animal é uma ave"
     private String Nome;
     private int Idade;
     private double Peso;
@@ -38,6 +41,8 @@ public class Animal{
         this.Peso = peso;
         this.Especie = especie;
     }
+    //Construtor de animal para que seus atributos sejam alterados/adicionados ao criá-lo
+    //sem a necessidade de ficar chamando os getters na main para alterar um atributo
 
     public String movimentar(String forma){
         return this.getNome()+" está se movimentando "+forma;
@@ -45,4 +50,6 @@ public class Animal{
     public String movimentar(){
         return this.getNome()+" está se movimentando normalmente";
     }
+    //Sobrecarga de método, permitindo que o mesmo método seja chamado de forma diferente,
+    //a fim de desempenhar um retorno diferente baseado nos parâmetros passados
 }
